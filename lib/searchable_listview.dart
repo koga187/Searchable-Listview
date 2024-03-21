@@ -684,7 +684,6 @@ class _SearchableListState<T> extends State<SearchableList<T>> {
             var entryValueList = widget.expansionListData[entryKey];
             return ExpansionTile(
               title: widget.expansionTitleBuilder.call(entryKey),
-              enabled: widget.expansionTileEnabled,
               children: entryValueList?.map(
                     (listItem) {
                       return widget.onItemSelected == null
